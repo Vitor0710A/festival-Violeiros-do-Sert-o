@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Line-up | Violeiros do Sertão</title>
+<title>Artistas | Violeiros do Sertão</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +15,24 @@
 
 <body>
 
-<header class="cabecalho">
+<header class="site-header">
 
-    <a href="../index.html" class="logo">
-        Violeiros do Sertão
-    </a>
+    <div class="nav-shell">
 
-    <nav>
-        <a href="../index.html">Início</a>
-        <a href="artistas.html">Artistas</a>
-        <a href="ingressos.html">Ingressos</a>
-        <a href="informacoes.html">Informações</a>
-        <a href="contato.html">Dúvidas</a>
-    </nav>
+        <a href="../index.html" class="brand">
+            <span>Violeiros</span>
+            <strong>do Sertão</strong>
+        </a>
+
+        <nav class="site-nav">
+            <a href="../index.html">Início</a>
+            <a href="artistas.html" class="ativo">Artistas</a>
+            <a href="ingressos.html">Ingressos</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="duvidas.html">Dúvidas</a>
+        </nav>
+
+    </div>
 
 </header>
 
@@ -39,145 +44,206 @@
 
         <span>VIOLEIROS DO SERTÃO 2026</span>
 
-        <h1>Line-up</h1>
+        <div class="titulo-grid">
 
-        <p>
-            Três noites reunindo grandes nomes do country americano, artistas que marcaram gerações e novas vozes que continuam levando o gênero pelas estradas.
-        </p>
+            <h1>
+                Três noites.<br>
+                Oito artistas.
+            </h1>
+
+            <p>
+                Do country tradicional às novas vozes do gênero, três dias de apresentações divididas entre o Palco Estrada e o Palco Rancho.
+            </p>
+
+        </div>
 
     </header>
 
-    <div class="artistas">
+    <section class="dia">
 
-        <article class="artista">
-
-            <img
-                src="../img/george-strait.jpg"
-                alt="George Strait"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
+        <header class="dia-cabecalho">
 
             <div>
-                <small>SEXTA · 16 OUT · 22H30 · PALCO ESTRADA</small>
-                <h2>George Strait</h2>
-                <p>Uma das maiores referências da história da música country.</p>
+                <span>NOITE 01</span>
+                <h2>Sexta, 16 de outubro</h2>
             </div>
 
-        </article>
+            <p>Primeira noite</p>
 
-        <article class="artista">
+        </header>
 
-            <img
-                src="../img/cody-johnson.jpg"
-                alt="Cody Johnson"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
+        <div class="artistas artistas-tres">
+
+            <article class="artista">
+
+                <div class="artista-imagem">
+                    <img src="../img/george-strait.jpg" alt="George Strait">
+                </div>
+
+                <div class="artista-info">
+                    <span>22H30 · PALCO ESTRADA</span>
+                    <h3>George Strait</h3>
+                    <p>Uma das maiores referências da história da música country.</p>
+                </div>
+
+            </article>
+
+            <article class="artista">
+
+                <div class="artista-imagem">
+                    <img src="../img/cody-johnson.jpg" alt="Cody Johnson">
+                </div>
+
+                <div class="artista-info">
+                    <span>20H30 · PALCO ESTRADA</span>
+                    <h3>Cody Johnson</h3>
+                    <p>Country contemporâneo construído sobre raízes tradicionais.</p>
+                </div>
+
+            </article>
+
+            <article class="artista">
+
+                <div class="artista-imagem">
+                    <img src="../img/whiskey-myers.jpg" alt="Whiskey Myers">
+                </div>
+
+                <div class="artista-info">
+                    <span>19H00 · PALCO RANCHO</span>
+                    <h3>Whiskey Myers</h3>
+                    <p>Country e southern rock abrem a primeira noite do festival.</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="dia">
+
+        <header class="dia-cabecalho">
 
             <div>
-                <small>SEXTA · 16 OUT · 20H30 · PALCO ESTRADA</small>
-                <h2>Cody Johnson</h2>
-                <p>Country moderno com raízes tradicionais e presença de palco.</p>
+                <span>NOITE 02</span>
+                <h2>Sábado, 17 de outubro</h2>
             </div>
 
-        </article>
+            <p>Segunda noite</p>
 
-        <article class="artista">
+        </header>
 
-            <img
-                src="../img/whiskey-myers.jpg"
-                alt="Whiskey Myers"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
+        <div class="artistas artistas-tres">
+
+            <article class="artista">
+
+                <div class="artista-imagem">
+                    <img src="../img/alan-jackson.jpg" alt="Alan Jackson">
+                </div>
+
+                <div class="artista-info">
+                    <span>22H00 · PALCO ESTRADA</span>
+                    <h3>Alan Jackson</h3>
+                    <p>Clássicos que atravessaram décadas e ajudaram a definir o gênero.</p>
+                </div>
+
+            </article>
+
+            <article class="artista">
+
+                <div class="artista-imagem">
+                    <img src="../img/chris-stapleton.jpg" alt="Chris Stapleton">
+                </div>
+
+                <div class="artista-info">
+                    <span>20H15 · PALCO ESTRADA</span>
+                    <h3>Chris Stapleton</h3>
+                    <p>Uma das vozes mais marcantes da geração atual do country.</p>
+                </div>
+
+            </article>
+
+            <article class="artista">
+
+                <div class="artista-imagem">
+                    <img src="../img/zach-top.jpg" alt="Zach Top">
+                </div>
+
+                <div class="artista-info">
+                    <span>18H45 · PALCO RANCHO</span>
+                    <h3>Zach Top</h3>
+                    <p>Uma nova geração inspirada pelo country tradicional dos anos 90.</p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="dia">
+
+        <header class="dia-cabecalho">
 
             <div>
-                <small>SEXTA · 16 OUT · 19H00 · PALCO RANCHO</small>
-                <h2>Whiskey Myers</h2>
-                <p>Southern rock e country em uma apresentação de peso.</p>
+                <span>NOITE 03</span>
+                <h2>Domingo, 18 de outubro</h2>
             </div>
 
-        </article>
+            <p>Última noite</p>
 
-        <article class="artista">
+        </header>
 
-            <img
-                src="../img/alan-jackson.jpg"
-                alt="Alan Jackson"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
+        <div class="artistas artistas-dois">
 
-            <div>
-                <small>SÁBADO · 17 OUT · 22H00 · PALCO ESTRADA</small>
-                <h2>Alan Jackson</h2>
-                <p>Clássicos que atravessaram décadas e ajudaram a definir o country.</p>
-            </div>
+            <article class="artista">
 
-        </article>
+                <div class="artista-imagem">
+                    <img src="../img/shania-twain.jpg" alt="Shania Twain">
+                </div>
 
-        <article class="artista">
+                <div class="artista-info">
+                    <span>22H30 · PALCO ESTRADA</span>
+                    <h3>Shania Twain</h3>
+                    <p>Uma das artistas mais reconhecidas da história do country encerra o festival.</p>
+                </div>
 
-            <img
-                src="../img/chris-stapleton.jpg"
-                alt="Chris Stapleton"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
+            </article>
 
-            <div>
-                <small>SÁBADO · 17 OUT · 20H15 · PALCO ESTRADA</small>
-                <h2>Chris Stapleton</h2>
-                <p>Uma das vozes mais marcantes da geração atual do gênero.</p>
-            </div>
+            <article class="artista">
 
-        </article>
+                <div class="artista-imagem">
+                    <img src="../img/luke-combs.jpg" alt="Luke Combs">
+                </div>
 
-        <article class="artista">
+                <div class="artista-info">
+                    <span>20H30 · PALCO ESTRADA</span>
+                    <h3>Luke Combs</h3>
+                    <p>Grandes sucessos de uma das principais vozes do country atual.</p>
+                </div>
 
-            <img
-                src="../img/zach-top.jpg"
-                alt="Zach Top"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
+            </article>
 
-            <div>
-                <small>SÁBADO · 17 OUT · 18H45 · PALCO RANCHO</small>
-                <h2>Zach Top</h2>
-                <p>Uma nova geração inspirada diretamente pelo country dos anos 90.</p>
-            </div>
+        </div>
 
-        </article>
+    </section>
 
-        <article class="artista">
+    <section class="chamada-final">
 
-            <img
-                src="../img/shania-twain.jpg"
-                alt="Shania Twain"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
+        <div>
+            <span>16, 17 E 18 DE OUTUBRO</span>
 
-            <div>
-                <small>DOMINGO · 18 OUT · 22H30 · PALCO ESTRADA</small>
-                <h2>Shania Twain</h2>
-                <p>Uma noite encerrada por uma das artistas mais reconhecidas do country.</p>
-            </div>
+            <h2>
+                Escolha sua noite.<br>
+                A estrada espera.
+            </h2>
+        </div>
 
-        </article>
+        <a href="ingressos.html">
+            Ver ingressos
+        </a>
 
-        <article class="artista">
-
-            <img
-                src="../img/luke-combs.jpg"
-                alt="Luke Combs"
-                onerror="this.onerror=null;this.src='../img/hero.jpg';"
-            >
-
-            <div>
-                <small>DOMINGO · 18 OUT · 20H30 · PALCO ESTRADA</small>
-                <h2>Luke Combs</h2>
-                <p>Sucessos atuais e uma das principais vozes do country contemporâneo.</p>
-            </div>
-
-        </article>
-
-    </div>
+    </section>
 
 </section>
 
@@ -185,8 +251,28 @@
 
 <footer class="rodape">
 
-    <p>Violeiros do Sertão © 2026</p>
-    <p>Vitor e Eric</p>
+    <div class="rodape-topo">
+
+        <a href="../index.html" class="brand">
+            <span>Violeiros</span>
+            <strong>do Sertão</strong>
+        </a>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="artistas.html">Artistas</a>
+            <a href="ingressos.html">Ingressos</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="duvidas.html">Dúvidas</a>
+        </nav>
+
+    </div>
+
+    <div class="rodape-final">
+        <span>Violeiros do Sertão © 2026</span>
+        <span>Piracicaba, São Paulo</span>
+        <span>Propriedade intelectual</span>
+    </div>
 
 </footer>
 
