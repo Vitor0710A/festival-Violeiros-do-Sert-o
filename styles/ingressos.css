@@ -1,0 +1,150 @@
+:root{
+  --bg: #17130f;
+  --card-bg: #221c17;
+  --card-border: #3a3128;
+  --wine: #6e2536;
+  --wine-border: #8a3245;
+  --cream: #efe6d8;
+  --cream-dim: #cabfae;
+  --gold: #d9b877;
+  --divider: #4a4038;
+}
+*{box-sizing:border-box;}
+html,body{
+  margin:0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.ingressos-container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+.ingressos-cabecalho h1{
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  margin: 0 0 14px;
+  color: var(--cream);
+}
+.ingressos-cabecalho p{
+  color: var(--cream-dim);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  max-width: 62ch;
+  margin: 0 0 48px;
+}
+.cards-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 28px 32px;
+  position: relative;
+}
+.card + .card{ margin-top: -1px; }
+.card-destaque{
+  background: var(--wine);
+  border-color: var(--wine-border);
+  z-index: 1;
+}
+.card-conteudo{ flex: 1; min-width: 0; }
+.card-conteudo h2{
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0 0 6px;
+  color: var(--cream);
+}
+.card-subtitulo{
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-size: 0.92rem;
+}
+.card-destaque .card-subtitulo{ color: #f0d9c8; }
+.card-beneficios{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.card-beneficios li{
+  font-size: 0.92rem;
+  color: var(--cream-dim);
+  padding-left: 16px;
+  position: relative;
+}
+.card-destaque .card-beneficios li{ color: #ecdccf; }
+.card-beneficios li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.card-destaque .card-beneficios li::before{ background: #f0d9c8; }
+.card-preco{
+  flex-shrink: 0;
+  text-align: right;
+  padding-left: 24px;
+  border-left: 1px dashed var(--divider);
+  min-width: 130px;
+}
+.card-destaque .card-preco{ border-left-color: rgba(255,255,255,0.3); }
+.preco{
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--gold);
+}
+.card-destaque .preco{ color: #fff; }
+.unidade{
+  display: block;
+  font-size: 0.78rem;
+  color: var(--cream-dim);
+  margin-top: 4px;
+}
+.card-destaque .unidade{ color: #ecdccf; }
+.ingressos-rodape{
+  margin-top: 32px;
+}
+.ingressos-rodape p{
+  font-size: 0.88rem;
+  color: var(--cream-dim);
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 620px){
+  .card{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-preco{
+    border-left: none;
+    border-top: 1px dashed var(--divider);
+    padding-left: 0;
+    padding-top: 16px;
+    text-align: left;
+    width: 100%;
+  }
+  .card-destaque .card-preco{ border-top-color: rgba(255,255,255,0.3); }
+}
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; }
+}

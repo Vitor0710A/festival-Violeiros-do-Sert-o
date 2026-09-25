@@ -1,0 +1,227 @@
+:root{
+  --bg: #17130f;
+  --card-bg: #221c17;
+  --card-border: #3a3128;
+  --wine: #6e2536;
+  --wine-border: #8a3245;
+  --cream: #efe6d8;
+  --cream-dim: #cabfae;
+  --gold: #d9b877;
+  --divider: #4a4038;
+}
+*{box-sizing:border-box;}
+html,body{
+  margin:0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.info-container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+.info-cabecalho h1{
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  margin: 0 0 14px;
+  color: var(--cream);
+}
+.info-cabecalho p{
+  color: var(--cream-dim);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  max-width: 62ch;
+  margin: 0 0 48px;
+}
+
+.info-topo{
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--divider);
+}
+
+h2{
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--cream);
+  margin: 0 0 16px;
+}
+
+.endereco p{
+  margin: 0 0 4px;
+  color: var(--cream-dim);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+.endereco p strong{
+  display: block;
+  color: var(--cream);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.como-chegar{
+  margin-top: 36px;
+}
+.chegar-item{
+  margin-bottom: 20px;
+}
+.chegar-item h3{
+  font-size: 0.92rem;
+  color: var(--gold);
+  text-transform: none;
+  margin: 0 0 4px;
+}
+.chegar-item p{
+  margin: 0;
+  color: var(--cream-dim);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.mapa-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.mapa-grid{
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 70px);
+  gap: 6px;
+}
+.quadra{
+  background: #2a231c;
+  border-radius: 4px;
+}
+.ponto-partida{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ponto-partida .marcador{
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #17130f;
+  font-weight: 600;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ponto-partida .rotulo{
+  position: absolute;
+  bottom: -20px;
+  font-size: 0.7rem;
+  color: var(--cream-dim);
+  white-space: nowrap;
+}
+.destino{
+  background: var(--wine);
+  border: 1px solid var(--wine-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px;
+}
+.destino span{
+  font-family: 'Fraunces', serif;
+  font-size: 0.85rem;
+  color: #fff;
+  line-height: 1.3;
+}
+.caminho{
+  position: absolute;
+  border-top: 2px dotted var(--gold);
+  top: 62px;
+  left: 96px;
+  width: 180px;
+}
+.caminho::after{
+  content: "";
+  position: absolute;
+  top: -70px;
+  right: 0;
+  border-right: 2px dotted var(--gold);
+  height: 70px;
+}
+.rua-label{
+  position: absolute;
+  font-size: 0.68rem;
+  color: var(--cream-dim);
+  letter-spacing: 0.02em;
+}
+.rua-topo{ top: 4px; right: 16px; }
+.rua-vertical{
+  top: 50%;
+  left: -4px;
+  transform: rotate(-90deg) translateX(50%);
+  transform-origin: left;
+}
+
+.mapa-legenda{
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--cream-dim);
+  line-height: 1.5;
+}
+
+.listas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 40px;
+}
+.lista ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.lista li{
+  font-size: 0.95rem;
+  color: var(--cream-dim);
+  line-height: 1.5;
+  padding-left: 18px;
+  position: relative;
+}
+.lista li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+@media (max-width: 720px){
+  .info-topo{
+    grid-template-columns: 1fr;
+  }
+  .listas{
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; }
+}

@@ -3,92 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Informações</title>
+<title>Informações | Violeiros do Sertão</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-<section class="info-container">
-  <header class="info-cabecalho">
-    <h1>Informações</h1>
-    <p>Tudo o que você precisa saber antes de calçar as botas e ir pro rancho.</p>
-  </header>
 
-  <div class="info-topo">
-    <div>
-      <div class="endereco">
-        <h2>Endereço</h2>
-        <p><strong>Arena Sertaneja &amp; Rancho Western</strong></p>
-        <p>Estrada do Rodeio, 1050, Bairro Campestre</p>
-        <p>Piracicaba, SP</p>
+<header class="site-header interno">
+  <div class="nav-container">
+    <a href="../index.html" class="logo">
+      <span>Violeiros</span>
+      <strong>do Sertão</strong>
+    </a>
+
+    <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav">
+      <a href="../index.html">Início</a>
+      <a href="lineup.html">Line-up</a>
+      <a href="ingressos.html">Ingressos</a>
+      <a href="informacoes.html" class="ativo">Informações</a>
+      <a href="faq.html">Dúvidas</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pagina-interna">
+
+<section class="pagina-cabecalho revelar">
+  <span class="rotulo">Antes de pegar a estrada</span>
+  <h1>Informações</h1>
+
+  <p>
+    Horários, endereço, transporte e tudo o que você precisa saber antes de chegar ao festival.
+  </p>
+</section>
+
+<section class="localizacao revelar">
+
+  <div class="localizacao-texto">
+
+    <div class="bloco-info">
+      <span class="numero-secao">01</span>
+      <h2>Endereço</h2>
+
+      <strong>Arena Sertaneja &amp; Rancho Western</strong>
+      <p>Estrada do Rodeio, 1050</p>
+      <p>Bairro Campestre</p>
+      <p>Piracicaba, SP</p>
+    </div>
+
+    <div class="bloco-info">
+      <span class="numero-secao">02</span>
+      <h2>Como chegar</h2>
+
+      <div class="transporte">
+        <h3>Ônibus</h3>
+        <p>Linha 402, Arena Sertaneja. Desembarque no Ponto do Rancho. A entrada fica a aproximadamente três minutos a pé.</p>
       </div>
 
-      <div class="como-chegar">
-        <h2>Como chegar</h2>
+      <div class="transporte">
+        <h3>Carro</h3>
+        <p>O estacionamento oficial funciona pela Entrada B e terá vigilância durante todo o evento.</p>
+      </div>
 
-        <div class="chegar-item">
-          <h3>Ônibus Line Country</h3>
-          <p>Linha 402 - Arena Sertaneja. Desembarque no Ponto do Rancho. São 3 minutos a pé até o portal principal.</p>
-        </div>
-
-        <div class="chegar-item">
-          <h3>Carro</h3>
-          <p>Estacionamento oficial com vigilância na Entrada B, por R$ 35 a noite.</p>
-        </div>
-
-        <div class="chegar-item">
-          <h3>Aplicativo</h3>
-          <p>O ponto de embarque e desembarque fica bem ao lado da Bilheteria Central.</p>
-        </div>
+      <div class="transporte">
+        <h3>Aplicativo</h3>
+        <p>O ponto oficial de embarque e desembarque ficará ao lado da Bilheteria Central.</p>
       </div>
     </div>
 
-    <div class="mapa-wrapper">
-      <div class="mapa-grid">
-        <div class="quadra"></div>
-        <div class="quadra"></div>
-        <div class="quadra"></div>
-
-        <div class="ponto-partida">
-          <div class="marcador">P</div>
-          <span class="rotulo">Estacionamento</span>
-        </div>
-        <div class="quadra"></div>
-        <div class="destino"><span>Entrada B</span></div>
-
-        <div class="quadra"></div>
-        <div class="quadra"></div>
-        <div class="quadra"></div>
-
-        <div class="caminho"></div>
-        <span class="rua-label rua-topo">Estrada do Rodeio</span>
-        <span class="rua-label rua-vertical">Rua do Rancho</span>
-      </div>
-      <p class="mapa-legenda">A linha pontilhada mostra o caminho a pé do estacionamento até a entrada da arena.</p>
-    </div>
   </div>
 
-  <div class="listas">
-    <div class="lista">
-      <h2>Pode levar</h2>
+  <div class="mapa-area">
+    <div class="mapa-topo">
+      <span>Local do festival</span>
+      <strong>Piracicaba, SP</strong>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps?q=Piracicaba,+SP&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Mapa de Piracicaba">
+    </iframe>
+
+    <p>
+      Utilize o mapa para visualizar a região do festival. A sinalização para a arena começa nas principais vias de acesso.
+    </p>
+  </div>
+
+</section>
+
+<section class="regras revelar">
+
+  <div class="regras-cabecalho">
+    <span class="rotulo">Regras do festival</span>
+    <h2>Antes de entrar</h2>
+  </div>
+
+  <div class="regras-grid">
+
+    <div class="regra-coluna">
+      <span class="regra-tipo">Pode levar</span>
+
       <ul>
-        <li>Documento com foto e o ingresso (digital ou impresso)</li>
-        <li>Chapéu, fivela e um casaco, porque o sereno esfria a madrugada</li>
-        <li>Celular para fotos e vídeos das montarias e shows</li>
-        <li>Copo eco de plástico rígido para as bebidas</li>
+        <li>Documento oficial com foto</li>
+        <li>Ingresso digital ou impresso</li>
+        <li>Chapéu e casaco</li>
+        <li>Celular para fotos e vídeos</li>
+        <li>Copo reutilizável de plástico rígido</li>
       </ul>
     </div>
 
-    <div class="lista">
-      <h2>Não pode levar</h2>
+    <div class="regra-coluna">
+      <span class="regra-tipo">Não pode levar</span>
+
       <ul>
-        <li>Objetos cortantes, canivetes ou esporas afiadas</li>
-        <li>Comidas e bebidas trazidas de fora</li>
-        <li>Coolers, isopores, bancos ou cadeiras dobráveis</li>
+        <li>Objetos cortantes ou pontiagudos</li>
+        <li>Comidas e bebidas externas</li>
+        <li>Coolers e caixas de isopor</li>
+        <li>Cadeiras e bancos dobráveis</li>
         <li>Câmeras profissionais e tripés</li>
       </ul>
     </div>
+
   </div>
 </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-principal">
+    <a href="../index.html" class="footer-logo">
+      <span>Violeiros</span>
+      <strong>do Sertão</strong>
+    </a>
+
+    <nav>
+      <a href="../index.html">Início</a>
+      <a href="lineup.html">Line-up</a>
+      <a href="ingressos.html">Ingressos</a>
+      <a href="informacoes.html">Informações</a>
+      <a href="faq.html">Dúvidas</a>
+    </nav>
+  </div>
+
+  <div class="footer-final">
+    <span>Violeiros do Sertão · 2026</span>
+    <span>Propriedade intelectual</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+
 </body>
 </html>
