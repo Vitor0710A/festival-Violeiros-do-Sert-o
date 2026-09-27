@@ -58,3 +58,35 @@ if (menuToggle && siteNav) {
 window.addEventListener("scroll", updatePageState, { passive: true });
 window.addEventListener("load", updatePageState);
 updatePageState();
+
+const ticketButtons = document.querySelectorAll(".ticket-select");
+const ticketSelection = document.getElementById("ticketSelection");
+const selectedTicket = document.getElementById("selectedTicket");
+const selectedPrice = document.getElementById("selectedPrice");
+const cancelTicket = document.getElementById("cancelTicket");
+
+ticketButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const ticket = button.dataset.ticket;
+        const price = Number(button.dataset.price);
+
+        selectedTicket.textContent = ticket;
+        selectedPrice.textContent = price.toLocaleString("pt-BR", {
+            style:"currency",
+            currency:"BRL"
+        });
+
+        ticketSelection.classList.add("visible");
+
+        ticketSelection.scrollIntoView({
+            behavior:"smooth",
+            block:"nearest"
+        });
+    });
+});
+
+if (cancelTicket) {
+    cancelTicket.addEventListener("click", () => {
+        ticketSelection.classList.remove("visible");
+    });
+}
