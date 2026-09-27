@@ -1,151 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ingressos | Violeiros do Sertão</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Ingressos do Violeiros do Sertão 2026.">
+    <title>Ingressos | Violeiros do Sertão</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
 <body>
 
-<header class="site-header interno">
-  <div class="nav-container">
-    <a href="../index.html" class="logo">
-      <span>Violeiros</span>
-      <strong>do Sertão</strong>
-    </a>
+<header class="site-header internal-header" id="siteHeader">
+    <div class="nav-shell">
+        <a href="../index.html" class="brand" aria-label="Violeiros do Sertão, início">
+            <span>Violeiros</span>
+            <strong>do Sertão</strong>
+        </a>
 
-    <button class="menu-botao" aria-label="Abrir menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
+            <span></span>
+            <span></span>
+        </button>
 
-    <nav class="site-nav">
-      <a href="../index.html">Início</a>
-      <a href="./artistas.html">Artistas</a>
-      <a href="./ingressos.html" class="ativo">Ingressos</a>
-      <a href="./informacoes.html">Informações</a>
-      <a href="./duvidas.html">Dúvidas</a>
-    </nav>
-  </div>
+        <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+            <a href="../index.html">Início</a>
+            <a href="lineup.html">Line-up</a>
+            <a href="ingressos.html" class="active" aria-current="page">Ingressos</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="faq.html">Dúvidas</a>
+        </nav>
+    </div>
 </header>
 
-<main class="pagina-interna">
+<main class="page-main">
+    <section class="page-heading">
+        <span class="eyebrow">16, 17 e 18 de outubro</span>
+        <h1>Ingressos</h1>
+        <p>
+            Escolha como você quer viver o Violeiros do Sertão. Todos os ingressos dão acesso aos dois palcos durante o período indicado.
+        </p>
+    </section>
 
-<section class="pagina-cabecalho revelar">
-  <span class="rotulo">16, 17 e 18 de outubro</span>
-  <h1>Ingressos</h1>
+    <section class="tickets">
+        <article class="ticket-row">
+            <span class="ticket-number">01</span>
 
-  <p>
-    Escolha como você quer viver o Violeiros do Sertão. Todos os ingressos dão acesso aos dois palcos durante o período indicado.
-  </p>
-</section>
+            <div class="ticket-copy">
+                <h2>Noite avulsa</h2>
+                <p>Para quem quer escolher apenas uma das três noites.</p>
+                <ul>
+                    <li>Acesso a uma noite do evento</li>
+                    <li>Entrada a partir das 19h</li>
+                    <li>Acesso aos dois palcos</li>
+                </ul>
+            </div>
 
-<section class="ingressos-lista revelar">
+            <div class="ticket-price">
+                <span>A partir de</span>
+                <strong>R$ 150</strong>
+                <small>por pessoa</small>
+            </div>
+        </article>
 
-  <article class="ingresso">
-    <div class="ingresso-numero">01</div>
+        <article class="ticket-row ticket-featured">
+            <span class="ticket-number">02</span>
 
-    <div class="ingresso-texto">
-      <h2>Noite avulsa</h2>
-      <p>Para quem quer escolher apenas uma das três noites.</p>
+            <div class="ticket-copy">
+                <span class="ticket-label">Festival completo</span>
+                <h2>Passe das três noites</h2>
+                <p>Para acompanhar o festival do primeiro ao último show.</p>
+                <ul>
+                    <li>Sexta, sábado e domingo</li>
+                    <li>Entrada antecipada às 18h30</li>
+                    <li>Acesso aos dois palcos durante os três dias</li>
+                </ul>
+            </div>
 
-      <ul>
-        <li>Acesso a uma noite do evento</li>
-        <li>Entrada a partir das 19h</li>
-        <li>Acesso aos dois palcos</li>
-      </ul>
+            <div class="ticket-price">
+                <span>Valor</span>
+                <strong>R$ 300</strong>
+                <small>por pessoa</small>
+            </div>
+        </article>
+
+        <article class="ticket-row">
+            <span class="ticket-number">03</span>
+
+            <div class="ticket-copy">
+                <h2>Mesa no salão</h2>
+                <p>Uma noite com espaço reservado próximo ao palco principal.</p>
+                <ul>
+                    <li>Ingresso para duas pessoas</li>
+                    <li>Mesa reservada e jantar para duas pessoas</li>
+                    <li>Atendimento durante os shows</li>
+                </ul>
+            </div>
+
+            <div class="ticket-price">
+                <span>Valor</span>
+                <strong>R$ 590</strong>
+                <small>por mesa</small>
+            </div>
+        </article>
+    </section>
+
+    <div class="page-note">
+        <span>Vendas</span>
+        <p>
+            As vendas começam em 1º de outubro pelo site e pela bilheteria do festival. Cada pessoa poderá comprar até quatro ingressos.
+        </p>
     </div>
-
-    <div class="ingresso-preco">
-      <span>A partir de</span>
-      <strong>R$ 150</strong>
-      <small>por pessoa</small>
-    </div>
-  </article>
-
-  <article class="ingresso ingresso-destaque">
-    <div class="ingresso-numero">02</div>
-
-    <div class="ingresso-texto">
-      <span class="mais-escolhido">Festival completo</span>
-
-      <h2>Passe das três noites</h2>
-      <p>Para acompanhar o festival do primeiro ao último show.</p>
-
-      <ul>
-        <li>Sexta, sábado e domingo</li>
-        <li>Entrada antecipada às 18h30</li>
-        <li>Acesso aos dois palcos durante os três dias</li>
-      </ul>
-    </div>
-
-    <div class="ingresso-preco">
-      <span>Valor</span>
-      <strong>R$ 300</strong>
-      <small>por pessoa</small>
-    </div>
-  </article>
-
-  <article class="ingresso">
-    <div class="ingresso-numero">03</div>
-
-    <div class="ingresso-texto">
-      <h2>Mesa no salão</h2>
-      <p>Uma noite com espaço reservado próximo ao palco principal.</p>
-
-      <ul>
-        <li>Ingresso para duas pessoas</li>
-        <li>Mesa reservada</li>
-        <li>Jantar para duas pessoas</li>
-        <li>Atendimento durante os shows</li>
-      </ul>
-    </div>
-
-    <div class="ingresso-preco">
-      <span>Valor</span>
-      <strong>R$ 590</strong>
-      <small>por mesa</small>
-    </div>
-  </article>
-
-</section>
-
-<section class="aviso-ingressos revelar">
-  <span>Vendas</span>
-
-  <p>
-    As vendas começam em 1º de outubro pelo site e pela bilheteria do festival. Cada pessoa poderá comprar até quatro ingressos.
-  </p>
-</section>
-
 </main>
 
 <footer class="site-footer">
-  <div class="footer-principal">
-    <a href="../index.html" class="footer-logo">
-      <span>Violeiros</span>
-      <strong>do Sertão</strong>
-    </a>
+    <div class="footer-top">
+        <a href="../index.html" class="brand">
+            <span>Violeiros</span>
+            <strong>do Sertão</strong>
+        </a>
 
-    <nav>
-      <a href="../index.html">Início</a>
-      <a href="artistas.html">Artistas</a>
-      <a href="ingressos.html">Ingressos</a>
-      <a href="informacoes.html">Informações</a>
-      <a href="duvidas.html">Dúvidas</a>
-    </nav>
-  </div>
+        <nav aria-label="Navegação do rodapé">
+            <a href="../index.html">Início</a>
+            <a href="lineup.html">Line-up</a>
+            <a href="ingressos.html">Ingressos</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="faq.html">Dúvidas</a>
+        </nav>
+    </div>
 
-  <div class="footer-final">
-    <span>Violeiros do Sertão · 2026</span>
-    <span>Propriedade intelectual</span>
-  </div>
+    <div class="footer-bottom">
+        <span>Violeiros do Sertão · 2026</span>
+        <span>Vitor Ruan e Eric</span>
+    </div>
 </footer>
 
 <script src="../scripts/scripts.js"></script>
-
 </body>
 </html>

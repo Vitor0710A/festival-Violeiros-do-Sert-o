@@ -1,263 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Violeiros do Sertão</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Violeiros do Sertão 2026, festival de música country em Piracicaba, São Paulo.">
+    <title>Violeiros do Sertão</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
 <body>
 
-<header class="home-header" id="homeHeader">
-    <div class="home-nav-wrap">
-        <a href="index.html" class="home-logo">
+<header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+        <a href="index.html" class="brand" aria-label="Violeiros do Sertão, início">
             <span>Violeiros</span>
             <strong>do Sertão</strong>
         </a>
 
-        <button class="home-menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
             <span></span>
             <span></span>
         </button>
 
-        <nav class="home-nav" id="homeNav">
-            <a href="index.html" class="ativo">Início</a>
-            <a href="./pages/artistas.html">Artistas</a>
-            <a href="./pages/ingressos.html">Ingressos</a>
-            <a href="./pages/informacoes.html">Informações</a>
-            <a href="./pages/duvidas.html">Dúvidas</a>
+        <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+            <a href="index.html" class="active" aria-current="page">Início</a>
+            <a href="pages/lineup.html">Line-up</a>
+            <a href="pages/ingressos.html">Ingressos</a>
+            <a href="pages/informacoes.html">Informações</a>
+            <a href="pages/faq.html">Dúvidas</a>
         </nav>
     </div>
 </header>
 
-<div class="home-faixa">
-    <div class="home-faixa-track">
-        <div class="home-faixa-grupo">
-            <span>Country ao vivo</span>
-            <i></i>
-            <span>Três noites</span>
-            <i></i>
-            <span>Dois palcos</span>
-            <i></i>
-            <span>Piracicaba</span>
-            <i></i>
-            <span>Violeiros do Sertão</span>
-            <i></i>
+<div class="home-ticker" id="homeTicker" aria-hidden="true">
+    <div class="ticker-track">
+        <div class="ticker-group">
+            <span>Country ao vivo</span><i></i>
+            <span>Três noites</span><i></i>
+            <span>Dois palcos</span><i></i>
+            <span>Piracicaba</span><i></i>
+            <span>Violeiros do Sertão</span><i></i>
         </div>
-
-        <div class="home-faixa-grupo">
-            <span>Country ao vivo</span>
-            <i></i>
-            <span>Três noites</span>
-            <i></i>
-            <span>Dois palcos</span>
-            <i></i>
-            <span>Piracicaba</span>
-            <i></i>
-            <span>Violeiros do Sertão</span>
-            <i></i>
-        </div>
-
-        <div class="home-faixa-grupo">
-            <span>Country ao vivo</span>
-            <i></i>
-            <span>Três noites</span>
-            <i></i>
-            <span>Dois palcos</span>
-            <i></i>
-            <span>Piracicaba</span>
-            <i></i>
-            <span>Violeiros do Sertão</span>
-            <i></i>
+        <div class="ticker-group">
+            <span>Country ao vivo</span><i></i>
+            <span>Três noites</span><i></i>
+            <span>Dois palcos</span><i></i>
+            <span>Piracicaba</span><i></i>
+            <span>Violeiros do Sertão</span><i></i>
         </div>
     </div>
 </div>
 
 <main>
+    <section class="hero">
+        <div class="hero-photo"></div>
+        <div class="hero-overlay"></div>
 
-<section class="home-hero">
-    <div class="home-hero-foto"></div>
-    <div class="home-hero-overlay"></div>
+        <div class="hero-shell">
+            <span class="eyebrow">Piracicaba, São Paulo</span>
 
-    <div class="home-hero-wrap">
-        <div class="home-hero-local">Piracicaba, São Paulo</div>
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1>
+                        <span>Violeiros</span>
+                        <strong>do Sertão</strong>
+                    </h1>
 
-        <div class="home-hero-grid">
-            <div class="home-hero-principal">
-                <h1>
-                    <span>Violeiros</span>
-                    <strong>do Sertão</strong>
-                </h1>
+                    <p>
+                        Três noites dedicadas ao country, reunindo gerações que fizeram história dentro e fora das estradas.
+                    </p>
 
-                <p class="home-hero-texto">
-                    Três noites dedicadas ao country, reunindo gerações que fizeram história dentro e fora das estradas.
-                </p>
-
-                <div class="home-hero-acoes">
-                    <a href="pages/ingressos.html" class="home-btn">Ver ingressos</a>
-                    <a href="pages/artistas.html" class="home-link">Conhecer o line-up</a>
+                    <div class="hero-actions">
+                        <a href="pages/ingressos.html" class="button button-wine">Ver ingressos</a>
+                        <a href="pages/lineup.html" class="text-link">Conhecer o line-up</a>
+                    </div>
                 </div>
+
+                <aside class="hero-date">
+                    <div class="date-line">
+                        <span>16</span><i></i><span>18</span>
+                    </div>
+                    <small>Outubro de 2026</small>
+                    <p>Arena Sertaneja<br>Piracicaba, SP</p>
+                </aside>
             </div>
-
-            <aside class="home-data">
-                <div class="home-data-numero">
-                    <span>16</span>
-                    <i></i>
-                    <span>18</span>
-                </div>
-
-                <p>Outubro de 2026</p>
-
-                <div class="home-data-local">
-                    Arena Sertaneja<br>
-                    Piracicaba, SP
-                </div>
-            </aside>
         </div>
-    </div>
+    </section>
 
-    <div class="home-scroll">
-        <span>Role para descobrir</span>
-        <i></i>
-    </div>
-</section>
-
-<section class="home-intro home-reveal">
-    <div class="home-intro-titulo">
-        <span class="home-rotulo">O festival</span>
-        <h2>O country encontra um novo destino.</h2>
-    </div>
-
-    <div class="home-intro-texto">
-        <p>
-            O Violeiros do Sertão nasceu para reunir diferentes gerações da música country em três noites de shows, encontros e histórias.
-        </p>
-
-        <p>
-            O palco recebe artistas que ajudaram a construir o gênero e nomes que continuam levando essa tradição adiante.
-        </p>
-
-        <a href="pages/informacoes.html" class="home-link">Saiba mais sobre o festival</a>
-    </div>
-</section>
-
-<section class="home-programacao home-reveal">
-    <div class="home-section-heading">
+    <section class="section split-section">
         <div>
-            <span class="home-rotulo">Principais atrações</span>
-            <h2>Grandes nomes.<br>Três noites.</h2>
+            <span class="eyebrow">O festival</span>
+            <h2>O country encontra um novo destino.</h2>
         </div>
 
-        <a href="pages/artistas.html" class="home-link">Ver todos os artistas</a>
-    </div>
+        <div class="body-copy">
+            <p>
+                O Violeiros do Sertão nasceu para reunir diferentes gerações da música country em três noites de shows, encontros e histórias.
+            </p>
+            <p>
+                O palco recebe artistas que ajudaram a construir o gênero e nomes que continuam levando essa tradição adiante.
+            </p>
+            <a href="pages/informacoes.html" class="text-link">Saiba mais sobre o festival</a>
+        </div>
+    </section>
 
-    <div class="home-artistas">
-        <article class="home-artista home-artista-grande">
-            <img src="img/george-strait.jpg" alt="George Strait" class="home-artista-imagem artista-george">
-
-            <div class="home-artista-info">
-                <span>Sexta, 22h30</span>
-                <h3>George Strait</h3>
-                <p>Palco Estrada</p>
+    <section class="section attractions-section">
+        <header class="section-heading">
+            <div>
+                <span class="eyebrow">Principais atrações</span>
+                <h2>Grandes nomes.<br>Três noites.</h2>
             </div>
-        </article>
+            <a href="pages/lineup.html" class="text-link">Ver todos os artistas</a>
+        </header>
 
-        <div class="home-artistas-menores">
-            <article class="home-artista">
-                <img src="img/alan-jackson.jpg" alt="Alan Jackson" class="home-artista-imagem artista-alan">
-
-                <div class="home-artista-info">
-                    <span>Sábado, 22h</span>
-                    <h3>Alan Jackson</h3>
-                    <p>Palco Estrada</p>
+        <div class="featured-artists">
+            <article class="featured-artist featured-main">
+                <img src="img/george-strait.jpg" alt="George Strait">
+                <div class="image-shade"></div>
+                <div class="featured-info">
+                    <span>Sexta, 22h30 · Palco Estrada</span>
+                    <h3>George Strait</h3>
                 </div>
             </article>
 
-            <article class="home-artista">
-                <img src="img/shania-twain.jpg" alt="Shania Twain" class="home-artista-imagem artista-shania">
+            <div class="featured-side">
+                <article class="featured-artist">
+                    <img src="img/alan-jackson.jpg" alt="Alan Jackson">
+                    <div class="image-shade"></div>
+                    <div class="featured-info">
+                        <span>Sábado, 22h · Palco Estrada</span>
+                        <h3>Alan Jackson</h3>
+                    </div>
+                </article>
 
-                <div class="home-artista-info">
-                    <span>Domingo, 22h30</span>
-                    <h3>Shania Twain</h3>
-                    <p>Palco Estrada</p>
+                <article class="featured-artist">
+                    <img src="img/shania-twain.jpg" alt="Shania Twain">
+                    <div class="image-shade"></div>
+                    <div class="featured-info">
+                        <span>Domingo, 22h30 · Palco Estrada</span>
+                        <h3>Shania Twain</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section split-section experience-section">
+        <div>
+            <span class="eyebrow">Violeiros do Sertão</span>
+            <h2>Muito além do palco.</h2>
+        </div>
+
+        <div class="feature-list">
+            <div class="feature-item">
+                <span>01</span>
+                <div>
+                    <strong>Dois palcos</strong>
+                    <p>Programação durante toda a noite com diferentes gerações do country.</p>
                 </div>
-            </article>
-        </div>
-    </div>
-</section>
+            </div>
 
-<section class="home-detalhes home-reveal">
-    <div class="home-detalhes-titulo">
-        <span class="home-rotulo">Violeiros do Sertão</span>
-        <h2>Muito além do palco.</h2>
-    </div>
+            <div class="feature-item">
+                <span>02</span>
+                <div>
+                    <strong>Três noites</strong>
+                    <p>Uma programação diferente em cada dia do festival.</p>
+                </div>
+            </div>
 
-    <div class="home-detalhes-lista">
-        <div class="home-detalhe">
-            <span>01</span>
-            <div>
-                <strong>Dois palcos</strong>
-                <p>Programação durante toda a noite com diferentes gerações do country.</p>
+            <div class="feature-item">
+                <span>03</span>
+                <div>
+                    <strong>Experiência completa</strong>
+                    <p>Música, alimentação e espaços pensados para aproveitar a noite inteira.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="home-detalhe">
-            <span>02</span>
-            <div>
-                <strong>Três noites</strong>
-                <p>Uma programação diferente em cada dia do festival.</p>
-            </div>
+    <section class="closing-cta">
+        <div>
+            <span>16, 17 e 18 de outubro</span>
+            <h2>A estrada termina<br>no Violeiros.</h2>
         </div>
-
-        <div class="home-detalhe">
-            <span>03</span>
-            <div>
-                <strong>Experiência completa</strong>
-                <p>Música, alimentação e espaços pensados para aproveitar a noite inteira.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="home-final home-reveal">
-    <div>
-        <span>16, 17 e 18 de outubro</span>
-        <h2>A estrada termina<br>no Violeiros.</h2>
-    </div>
-
-    <a href="pages/ingressos.html">Garantir ingresso</a>
-</section>
-
+        <a href="pages/ingressos.html" class="button button-wine">Garantir ingresso</a>
+    </section>
 </main>
 
-<footer class="home-footer">
-    <div class="home-footer-top">
-        <a href="index.html" class="home-footer-logo">
+<footer class="site-footer">
+    <div class="footer-top">
+        <a href="index.html" class="brand">
             <span>Violeiros</span>
             <strong>do Sertão</strong>
         </a>
 
-        <nav>
+        <nav aria-label="Navegação do rodapé">
             <a href="index.html">Início</a>
-            <a href="./pages/artistas.html">Artistas</a>
-            <a href="./pages/ingressos.html">Ingressos</a>
-            <a href="./pages/informacoes.html">Informações</a>
-            <a href="./pages/duvidas.html">Dúvidas</a>
+            <a href="pages/lineup.html">Line-up</a>
+            <a href="pages/ingressos.html">Ingressos</a>
+            <a href="pages/informacoes.html">Informações</a>
+            <a href="pages/faq.html">Dúvidas</a>
         </nav>
     </div>
 
-    <div class="home-footer-bottom">
+    <div class="footer-bottom">
         <span>Violeiros do Sertão · 2026</span>
-        <span>Propriedade intelectual</span>
+        <span>Vitor Ruan e Eric</span>
     </div>
 </footer>
 
 <script src="scripts/scripts.js"></script>
-
 </body>
 </html>

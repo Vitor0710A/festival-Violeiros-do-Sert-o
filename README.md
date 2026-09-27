@@ -1,76 +1,69 @@
-# Briefing do Festival
+# Violeiros do Sertão
 
-## Nome do festival
+**Dupla:** Vitor e Eric  
+**Site publicado:** https://festival-violeiros-do-sert-o.vercel.app/index.html
 
-**Violeiros do Sertão**
+## Briefing
 
-O Violeiros do Sertão é um festival de música country com uma identidade inspirada no interior, na vida no campo e na cultura sertaneja. A proposta é juntar música, tradição e um visual rústico em um evento atual e bem organizado.
+O Violeiros do Sertão é um festival de música country realizado em Piracicaba, São Paulo, nos dias 16, 17 e 18 de outubro de 2026.
 
-## Público
+### Público
 
-O festival é voltado principalmente para jovens e adultos entre 16 e 35 anos que gostam de música country, sertanejo, shows ao vivo e eventos com clima de interior.
+O festival é voltado principalmente para jovens e adultos que gostam de música country, cultura western, shows ao vivo e ambientes inspirados no interior. Esse público espera boa música, organização, identidade visual forte, informações fáceis de encontrar e uma experiência que combine com o estilo do evento.
 
-Esse público procura um evento animado, com bons artistas, espaços para alimentação, áreas para fotos e uma ambientação que combine com o estilo das músicas e com a proposta do festival.
+### Clima do festival
 
-## Clima do festival
+**Rústico, noturno, autêntico.**
 
-**Rústico, acolhedor e animado.**
+### Paleta de cores
 
-## Paleta de cores
+**#17130F | Marrom quase preto**  
+Cor principal do fundo. Cria o clima noturno e deixa as fotografias e os tons quentes em destaque.
 
-**#1B120D | Marrom escuro**
-Será a principal cor de fundo do site e também poderá aparecer no menu e no rodapé.
+**#221C17 | Marrom madeira**  
+Usado em áreas secundárias e seções de apoio para criar profundidade sem mudar a identidade do site.
 
-**#6B3E26 | Marrom couro**
-Será usado em detalhes e elementos que lembrem madeira, couro e o ambiente rural.
+**#6E2536 | Vinho**  
+Usado em botões e detalhes de destaque. Foi escolhido para trazer contraste sem recorrer às combinações roxo e azul comuns em sites gerados por IA.
 
-**#D9903D | Laranja queimado**
-Será usado em botões, links importantes e alguns destaques.
+**#EFE6D8 | Creme**  
+Cor principal dos textos e títulos claros. Mantém boa leitura sobre o fundo escuro e combina com a estética western.
 
-**#F2D6A2 | Bege claro**
-Será usado principalmente nos textos e em áreas que precisem de maior contraste.
+**#D9B877 | Dourado envelhecido**  
+Usado em datas, pequenas chamadas, linhas e detalhes. Lembra couro, iluminação quente e materiais antigos.
 
-**#A6422B | Vermelho terroso**
-Será usado em pequenos detalhes para complementar a identidade visual.
+### Fontes
 
-As cores foram escolhidas porque lembram terra, madeira, couro e o pôr do sol no interior, combinando com a proposta do Violeiros do Sertão.
+**Fraunces** para títulos. A fonte tem personalidade editorial e combina com cartazes, capas de discos e materiais ligados à tradição country.
 
-## Fontes
+**Inter** para textos. Foi escolhida por ser simples e muito legível, equilibrando os títulos mais expressivos.
 
-### Rye
+### Referências visuais
 
-A fonte Rye será usada nos títulos. Escolhemos essa fonte porque tem uma aparência rústica e marcante, combinando com a identidade do festival.
+**Stagecoach Festival**  
+https://www.stagecoachfestival.com/  
+Gostamos da maneira como o festival usa fotografia de artistas, elementos western e grandes chamadas sem deixar a navegação confusa.
 
-### Montserrat
+**CMA Fest**  
+https://cmafest.com/  
+Serviu como referência para organizar informações sobre artistas, datas e programação sem perder o foco na música country.
 
-A fonte Montserrat será usada nos textos, menus e informações. Ela é simples e fácil de ler, criando equilíbrio com a fonte usada nos títulos.
+**Austin City Limits Music Festival**  
+https://www.aclfestival.com/  
+A referência principal foi a forma de destacar atrações com imagens grandes e manter hierarquia clara entre títulos, informações e chamadas para ação.
 
-## Referências
+## Antes e depois
 
-### Stagecoach Festival
+![Antes](img/antes.png)
 
-https://www.stagecoachfestival.com/
+![Depois](img/depois.png)
 
-O Stagecoach foi usado como referência principalmente pela forma como as imagens dos artistas e dos shows ganham bastante destaque.
+## Os 4 prompts que mais fizeram diferença
 
-### CMA Fest
+1. Estou criando o site de um festival chamado Violeiros do Sertão. Quero uma identidade inspirada em música country americana e cultura western, com fundo marrom escuro, creme, dourado envelhecido e vinho. Use Fraunces nos títulos e Inter nos textos. Não use emojis, gradientes roxo e azul, excesso de cards, cantos arredondados ou sombras genéricas.
 
-https://cmafest.com/
+2. Aprimore a página inicial sem mudar a identidade visual. Quero uma hero com fotografia ocupando o fundo, nome do festival em destaque, datas e local visíveis, dois botões discretos e uma composição editorial que não pareça um template de inteligência artificial.
 
-Usamos o CMA Fest como referência para a organização das informações sobre programação, artistas e ingressos.
+3. Refaça a área dos artistas para que as fotografias mantenham proporções consistentes e não fiquem cortadas de maneira estranha. Organize o line-up por noite, mostrando nome, imagem, dia, horário e palco de cada artista.
 
-### Country Thunder
-
-https://www.countrythunder.com/
-
-Gostamos da navegação simples e da forma como as informações são separadas, facilitando encontrar o lineup, os ingressos e os detalhes do evento.
-
-## Direção visual
-
-O site terá uma aparência inspirada no interior e na cultura country, utilizando tons de marrom, bege, laranja e vermelho terroso.
-
-A ideia é trazer elementos que lembrem madeira, couro, estradas de terra, viola, fazenda e pôr do sol, mas sem deixar o site com aparência antiga ou exageradamente temática.
-
-As imagens terão bastante importância no visual. Os títulos serão grandes e marcantes, enquanto os textos terão uma aparência mais simples.
-
-Não serão usadas caixas em volta de todo o conteúdo. Cards só aparecerão quando realmente forem necessários para organizar informações, como artistas ou
+4. Corrija a versão para celular sem alterar o layout do computador. O conteúdo precisa continuar visível mesmo se o JavaScript não carregar. O menu deve funcionar em telas pequenas e nenhuma seção pode depender de animação para aparecer.

@@ -1,117 +1,60 @@
-const homeHeader = document.getElementById("homeHeader");
-const faixa = document.querySelector(".home-faixa");
+const header = document.getElementById("siteHeader");
+const menuToggle = document.getElementById("menuToggle");
+const siteNav = document.getElementById("siteNav");
+const homeTicker = document.getElementById("homeTicker");
 
-const headerInterno = document.querySelector(".site-header");
+function updatePageState() {
+    const y = window.scrollY || 0;
 
-const menuButton =
-    document.getElementById("menuButton") ||
-    document.querySelector(".menu-botao");
-
-const nav =
-    document.getElementById("homeNav") ||
-    document.querySelector(".site-nav");
-
-function atualizarScroll() {
-    if (homeHeader) {
-        if (window.scrollY > 40) {
-            homeHeader.classList.add("scrolled");
-        } else {
-            homeHeader.classList.remove("scrolled");
-        }
+    if (header) {
+        header.classList.toggle("scrolled", y > 24);
     }
 
-    if (headerInterno) {
-        if (window.scrollY > 20) {
-            headerInterno.classList.add("rolando");
-        } else {
-            headerInterno.classList.remove("rolando");
-        }
-    }
-
-    if (faixa) {
-        if (window.scrollY > 110) {
-            faixa.classList.add("apareceu");
-        } else {
-            faixa.classList.remove("apareceu");
-        }
+    if (homeTicker) {
+        const showTicker = y > 70 && window.innerWidth > 620;
+        homeTicker.classList.toggle("visible", showTicker);
+        homeTicker.setAttribute("aria-hidden", showTicker ? "false" : "true");
     }
 }
 
-window.addEventListener("scroll", atualizarScroll, {
-    passive: true
-});
+function closeMenu() {
+    if (!menuToggle || !siteNav) return;
 
-atualizarScroll();
+    siteNav.classList.remove("open");
+    menuToggle.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+}
 
-if (menuButton && nav) {
-    menuButton.addEventListener("click", () => {
-        const aberto = nav.classList.toggle("aberto");
+if (menuToggle && siteNav) {
+    menuToggle.addEventListener("click", () => {
+        const opening = !siteNav.classList.contains("open");
 
-        menuButton.classList.toggle("aberto", aberto);
-        menuButton.setAttribute(
-            "aria-expanded",
-            aberto ? "true" : "false"
-        );
+        siteNav.classList.toggle("open", opening);
+        menuToggle.classList.toggle("open", opening);
+        menuToggle.setAttribute("aria-expanded", opening ? "true" : "false");
+        document.body.classList.toggle("menu-open", opening);
     });
 
-    nav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("aberto");
-            menuButton.classList.remove("aberto");
-            menuButton.setAttribute("aria-expanded", "false");
-        });
+    siteNav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
     });
 
     window.addEventListener("resize", () => {
-        if (window.innerWidth > 900) {
-            nav.classList.remove("aberto");
-            menuButton.classList.remove("aberto");
-            menuButton.setAttribute("aria-expanded", "false");
+        if (window.innerWidth > 820) {
+            closeMenu();
+        }
+
+        updatePageState();
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            closeMenu();
         }
     });
 }
 
-const elementos = document.querySelectorAll(
-    ".home-reveal, .revelar"
-);
-
-function mostrarElemento(elemento) {
-    if (elemento.classList.contains("home-reveal")) {
-        elemento.classList.add("home-visible");
-    }
-
-    if (elemento.classList.contains("revelar")) {
-        elemento.classList.add("visivel");
-    }
-}
-
-if (window.innerWidth <= 900) {
-    elementos.forEach(elemento => {
-        mostrarElemento(elemento);
-    });
-} else if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-        entries => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                }
-
-                mostrarElemento(entry.target);
-                observer.unobserve(entry.target);
-            });
-        },
-        {
-            threshold: 0.08,
-            rootMargin: "0px 0px 40px 0px"
-        }
-    );
-
-    elementos.forEach(elemento => {
-        observer.observe(elemento);
-    });
-} else {
-    elementos.forEach(elemento => {
-        mostrarElemento(elemento);
-    });
-}
+window.addEventListener("scroll", updatePageState, { passive: true });
+window.addEventListener("load", updatePageState);
+updatePageState();
